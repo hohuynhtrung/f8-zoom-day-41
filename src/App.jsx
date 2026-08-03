@@ -1,5 +1,12 @@
+import { HashRouter } from "react-router";
+import AppRoutes from "./components/AppRoutes";
+
 function App() {
-  return <h1>f8-zoom-day-41</h1>;
+  return (
+    <HashRouter>
+      <AppRoutes />
+    </HashRouter>
+  );
 }
 
 export default App;

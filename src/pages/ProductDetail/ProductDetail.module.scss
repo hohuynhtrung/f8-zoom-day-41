@@ -1,0 +1,101 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.btnBack {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #e5e7eb;
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        max-height: 350px;
+        object-fit: contain;
+    }
+}
+
+.infoSection {
+    .category {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #6b7280;
+        font-weight: 600;
+    }
+
+    .title {
+        font-size: 26px;
+        margin: 8px 0;
+    }
+
+    .brand {
+        color: #4b5563;
+        margin-bottom: 16px;
+    }
+
+    .priceRow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+
+        .currentPrice {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ef4444;
+        }
+
+        .originalPrice {
+            text-decoration: line-through;
+            color: #9ca3af;
+        }
+
+        .badge {
+            background: #fef2f2;
+            color: #ef4444;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    }
+
+    .description {
+        line-height: 1.6;
+        color: #374151;
+    }
+}
+
+.notFound {
+    text-align: center;
+    padding: 40px 0;
+}
